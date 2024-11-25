@@ -52,8 +52,7 @@ const Hero = () => {
                             },
                         }}
                     >
-                        Benefit of the socie where we operate. A success website obviously needs
-                        great design to be one of the top 10 IT companies in the world.
+                        A successful project requires exceptional planning, innovative designs, and quality craftsmanship to achieve excellence and become a leader in the global construction industry.
                     </motion.p>
                     <motion.div
                         className="flex justify-center gap-4 mb-8"
