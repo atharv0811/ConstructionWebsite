@@ -34,7 +34,8 @@ const Contact = () => {
                             <div className="space-y-5">
                                 <h3 className="text-2xl font-bold text-gray-600">Address</h3>
                                 <p className="text-gray-500 text-lg">
-                                    Aathvdi bazar in front of Police Station,<br />
+                                    Aathvdi bazar in front of Police Station,
+                                    <br />
                                     First floor, Shop no. 2, Murtjapur, <br />
                                     Dist - Akola
                                 </p>
@@ -44,7 +45,9 @@ const Contact = () => {
                                 <p className="text-gray-500 text-lg">+91-7517657553</p>
                                 <p className="text-gray-500 text-lg">+91-8788396578</p>
                                 <h1 className="text-2xl font-bold text-gray-600">Email</h1>
-                                <p className="text-gray-500 text-lg">builderscontinental7@gmail.com</p>
+                                <p className="text-gray-500 text-lg">
+                                    builderscontinental7@gmail.com
+                                </p>
                             </div>
                         </div>
                     </motion.div>
@@ -57,7 +60,7 @@ const Contact = () => {
                         viewport={{ once: true }}
                     >
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15174.36816847619!2d72.99548895990337!3d18.04412682767421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be84b4b002b96c1%3A0x87024786ae488032!2sR.%20N.%20Raut%20Highschool%20And%20Jr.%20College!5e0!3m2!1sen!2sin!4v1732530050687!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.3656835501165!2d77.3664951!3d20.7359673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6d1676f12e8bf%3A0x82aca57080499de!2sContinental%20construction!5e0!3m2!1sen!2sin!4v1732555410460!5m2!1sen!2sin"
                             width="100%"
                             height="350"
                             style={{ border: 0 }}
