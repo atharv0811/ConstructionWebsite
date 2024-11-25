@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
@@ -144,6 +144,27 @@ interface QuoteModalProps {
 }
 
 const QuoteModal: React.FC<QuoteModalProps> = ({ setIsModalOpen }) => {
+    const formRef = useRef<HTMLFormElement>(null);
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (formRef.current) {
+            fetch("https://script.google.com/macros/s/AKfycbyBG_x_c92RDhqrZW38ms1DSo1FB192n90r-qwAxU2N2IioVqJ5vnmETJl1bfx2fSjF/exec", {
+                method: 'POST',
+                body: new FormData(formRef.current),
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    alert(data.msg);
+                    formRef.current?.reset();
+                    setIsModalOpen(false);
+                })
+                .catch(err => console.log(err))
+        }
+    };
+
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div
@@ -171,19 +192,22 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ setIsModalOpen }) => {
                     </svg>
                 </button>
                 <h2 className="text-xl font-bold mb-4">Get a Quote</h2>
-                <form className="space-y-4">
+                <form className="space-y-4" ref={formRef} onSubmit={handleSubmit}>
                     <input
                         type="text"
                         placeholder="Your Name"
+                        name="Name"
                         className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     />
                     <input
                         type="email"
                         placeholder="Your Email"
+                        name="Email"
                         className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     />
                     <textarea
                         placeholder="Your Message"
+                        name="Message"
                         className="w-full h-24 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
                     ></textarea>
                     <button

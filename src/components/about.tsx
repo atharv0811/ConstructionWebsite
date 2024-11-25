@@ -6,6 +6,7 @@ import {
     Smile,
     UserRound,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const stats = [
     {
@@ -82,8 +83,10 @@ const About = () => {
                             We have a long and proud history giving emphasis to environment
                             social and economic outcomes to deliver places that respond.
                         </p>
-                        <button className="bg-[#343a40] py-[16px] px-[35px] flex items-center text-white text-[16px] font-bold">
-                            Work with us <ArrowRight className="ml-2" />
+                        <button className="bg-[#343a40] py-[16px] px-[35px] text-white text-[16px] font-bold">
+                            <Link to={'/contact'} className="flex items-center">
+                                Work with us <ArrowRight className="ml-2" />
+                            </Link>
                         </button>
                     </div>
                 </motion.div>
