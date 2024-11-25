@@ -8,3 +8,13 @@ html,
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+::selection {
+  background: #ffc13b;
+  color: white;
+}
+
+::-moz-selection {
+  background: #ffc13b;
+  color: white;
+}
