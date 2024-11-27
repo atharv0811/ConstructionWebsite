@@ -47,7 +47,7 @@ const CoreValues = () => {
                     className="text-center mb-16"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 1 }}
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-[#ffc13b] mb-4">
@@ -65,7 +65,7 @@ const CoreValues = () => {
                             className="bg-white rounded-lg shadow-xl p-8 text-center border"
                             initial={{ opacity: 0, x: 10 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3, delay: index * 0.2 }}
+                            transition={{ duration: 1, delay: index * 0.2 }}
                             viewport={{ once: true }}
                         >
                             <img

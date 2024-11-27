@@ -9,7 +9,7 @@ const Contact = () => {
                     className="text-center mb-16"
                     initial={{ opacity: 0, x: -100 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-[#ffc13b] mb-4">
@@ -26,7 +26,7 @@ const Contact = () => {
                         className="mx-6"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
+                        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
                         viewport={{ once: true }}
                     >
                         <h1 className="text-2xl font-bold">Continental Constructions</h1>

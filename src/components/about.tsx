@@ -42,7 +42,7 @@ const containerVariants = {
         y: 0,
         transition: {
             staggerChildren: 0.3,
-            duration: 0.5,
+            duration: 1,
         },
     },
 };
@@ -53,7 +53,7 @@ const itemVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.5,
+            duration: 1,
         },
     },
 };

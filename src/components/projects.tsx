@@ -8,7 +8,7 @@ const Projects = () => {
             className="py-16 bg-gray-50"
             initial={{ opacity: 0, x: 0, y: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-            transition={{ duration: .5 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,7 +35,7 @@ const Projects = () => {
                             initial={{ opacity: 0, x: 0, y: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
                             transition={{
-                                duration: 0.8,
+                                duration: 1,
                                 delay: index * 0.2,
                                 ease: "easeOut",
                             }}
