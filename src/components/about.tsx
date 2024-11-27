@@ -12,7 +12,7 @@ const stats = [
     {
         id: 1,
         icon: <Building2 className="size-14 text-[#ffc13b]" />,
-        value: "5+",
+        value: "15+",
         description: "Successfully Project Finished.",
     },
     {
