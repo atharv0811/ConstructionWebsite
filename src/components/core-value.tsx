@@ -63,7 +63,7 @@ const CoreValues = () => {
                         <motion.div
                             key={index}
                             className="bg-white rounded-lg shadow-xl p-8 text-center border"
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0, x: -100 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, delay: index * 0.2 }}
                             viewport={{ once: true }}
