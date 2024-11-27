@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
                         <div className="space-y-1 transform transition-all duration-300 ease-in-out">
                             <MobileNavLink href="/" setIsOpen={setIsOpen}>HOME</MobileNavLink>
                             <MobileNavLink href="/projects" setIsOpen={setIsOpen}>PROJECTS</MobileNavLink>
+                            <MobileNavLink href="/designs" setIsOpen={setIsOpen}>DESIGNS</MobileNavLink>
                             <MobileNavLink href="/contact" setIsOpen={setIsOpen}>CONTACT</MobileNavLink>
                             <button
                                 onClick={() => setIsModalOpen(true)}
@@ -59,6 +60,7 @@ const DesktopNav: React.FC<DesktopNavProps> = ({ setIsModalOpen }) => {
         <div className="hidden md:flex items-center space-x-8">
             <Nav href="/">HOME</Nav>
             <Nav href="/projects">PROJECTS</Nav>
+            <Nav href="/designs">DESIGNS</Nav>
             <Nav href="/contact">CONTACT</Nav>
             <button
                 onClick={() => setIsModalOpen(true)}
